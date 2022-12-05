@@ -1,13 +1,97 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* height: 100vh;
+    background-color: black;
+    background-image: url(../public/images/logoMuseu.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%; */
+    margin: 0;
+    font-family: var(--bs-font-monospace);
+} 
+
+.container{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-item{
+    border-left: 0.5px solid;
+    border-color: white;
+
+}
+
+.bi-instagram{
+    font-size: 30px;
+    color: white;
+
+}
+
+.bi-envelope{
+    font-size: 33px;
+    color: white;
+
+}
+
+.nav{
+    font-size: 20px;
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: yellow;
+    --bs-nav-link-padding-x: 2rem;
+    --bs-nav-link-padding-y: 1.5rem;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007cc2;
+    min-height: 150px;
+    padding-left: 5vw;
+    padding-right: 10vw;
+    
+}
+
+.head-itens{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.head-icons{
+
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-item > img{
+   max-height: 700px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #007cc2;
+    height: 500px;
+    padding-left: 5vw;
+    padding-right: 10vw;
+    bottom: 0;
+}
+
+.text-info-footer > a, span{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+  }
+
+.row {
+--bs-gutter-x: 0rem;
 }
