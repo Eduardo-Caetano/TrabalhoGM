@@ -28,7 +28,7 @@ body {
 }
 
 .bi-envelope{
-    font-size: 33px;
+    font-size: 35px;
     color: white;
 
 }
@@ -43,6 +43,7 @@ body {
 }
 
 .header{
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,12 +51,14 @@ body {
     min-height: 150px;
     padding-left: 5vw;
     padding-right: 10vw;
+    box-shadow: 0 16px 26px 8px #222222;
     
 }
 
 .head-itens{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .head-icons{
@@ -63,25 +66,70 @@ body {
     width: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .carousel-item > img{
    max-height: 700px;
 }
 
+.text-img{
+    width: 500px;
+    height: 300px;
+    background-color: #007cc28c;
+    position: absolute;
+    z-index: 999;
+    top: 200px;
+    right: 0;
+    border-radius: 20px 0 0 20px;
+    padding: 30px;
+}
+
+.text-img{
+    opacity: 1 !important;
+    color: white;
+    padding-right: 160px;
+    text-align: justify;
+    
+}
+
+.shadow-divisor{
+    box-shadow: 0 8px 30px 8px #222222;
+}
+.projects{
+   text-align: justify;
+    padding-top: 100px;
+    height: fit-content;
+}
+
+.projects h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#dir-text{
+    margin: 20px 0 40px 0;
+    text-align: end;
+}
+
 .footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: white !important;
+    text-decoration: none !important ;
     background-color: #007cc2;
-    height: 500px;
+    height: fit-content;
     padding-left: 5vw;
     padding-right: 10vw;
     bottom: 0;
 }
 
-.text-info-footer > a, span{
+.footer iframe{
+    padding: 30px;
+}
+
+.text-info-footer > a{
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
@@ -94,4 +142,5 @@ a:hover {
 
 .row {
 --bs-gutter-x: 0rem;
+justify-content: center;
 }
